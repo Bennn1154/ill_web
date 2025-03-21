@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Health Educator Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>慢性病衛教平台</h1>
+    <del>
+        <h4>因為我是客家人，機器人回覆都是簡體，敬請見諒</h4>
+    </del>
+    <div id="selection-section">
+        <h2>選擇疾病和階段</h2>
+        選擇疾病：
+        <select id="disease-select">
+            <option value="Breast Cancer">乳癌</option>
+            <option value="Breast Cancer">糖尿病</option>
+            <option value="Breast Cancer">大腸癌</option>
+        </select>
+        選擇階段：
+        <select id="stage-select">
+            <option value="Stage 1">第一期</option>
+            <option value="Stage 2">第二期</option>
+            <option value="Stage 3">第三期</option>
+            <option value="Stage 4">第四期</option>
+        </select>
+        <button id="start-button">開始聊天</button>
+    </div>
+    <div id="chatbot-section" style="display: none;">
+        <div id="conversation"></div>
+        <input id="user-input" type="text" placeholder="輸入問題...">
+        <button id="send-button">發送</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
